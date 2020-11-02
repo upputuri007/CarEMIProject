@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+	<listener class-name="Test.RetryListenerClass"/>
+</listeners>
+  <test thread-count="5" name="Test1">
+  <parameter name ="browserType" value="firefox"/>
+    <classes>
+     <class name="Test.InputsToFieldsTest"/> 
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Test2">
+	<classes>
+		<class name="Test.toolsPage"/> 	
+	</classes>  
+  </test>
+  <test thread-count="5" name="Test3">
+  	<classes>
+  		<class name="Test.ToolsPageLoginOptionTest"/>
+  	</classes>
+  </test>
+  <test thread-count="5" name="Test4">
+  	<classes>
+  		<class name="Test.NullInputsToFieldsTest1"/>
+  	</classes>
+  </test>
+  <test thread-count="5" name="Test5">
+  	<classes>
+  		<class name="Test.NullInputsToFieldsTest3"/>
+  	</classes>
+  </test>
+  <test thread-count="5" name="Test6">
+  <classes>
+  	<class name="Test.UrlTest"/>
+  </classes>
+  </test>
+  <test thread-count="5" name="Test7">
+  <classes>
+  	<class name="Test.NullInputsToFieldsTest2"/>
+  </classes>
+  </test>
+  <test thread-count="5" name="Test8">
+  <classes>
+  	<class name="Test.NullInputsToFieldsTest4"/>
+  </classes>
+  </test>
+  <test thread-count="5" name="Test9">
+  <classes>
+  	<class name="Test.ToolsPageLoginOptionCalculateBtnTest"/>
+  </classes>
+  </test>
+  <test thread-count="5" name="Test10">
+  <classes>
+  	<class name="Test.LowValuesToInputFieldBoxTest"/>
+  </classes>
+  </test>
+  <test thread-count="5" name="Test11">
+  <classes>
+  	<class name="Test.ValidateLandingPage"/>
+  </classes>
+  </test>
+</suite> <!-- Suite -->

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CarEMIProjectSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TestOne(failed)">
+    <classes>
+      <class name="Test.NullInputsToFieldsTest3">
+        <methods>
+          <include name="flushReport"/>
+          <include name="TestNullInput"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Test.NullInputsToFieldsTest3 -->
+      <class name="Test.InputsToFieldsTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="Test1"/>
+          <include name="flushReport"/>
+        </methods>
+      </class> <!-- Test.InputsToFieldsTest -->
+      <class name="Test.ToolsPageLoginOptionCalculateBtnTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="toolsPageLoginCalculateOptionTest"/>
+          <include name="flushReport"/>
+        </methods>
+      </class> <!-- Test.ToolsPageLoginOptionCalculateBtnTest -->
+      <class name="Test.NullInputsToFieldsTest1">
+        <methods>
+          <include name="TestNullInput"/>
+          <include name="flushReport"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Test.NullInputsToFieldsTest1 -->
+      <class name="Test.LowValuesToInputFieldBoxTest">
+        <methods>
+          <include name="flushReport"/>
+          <include name="Test"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Test.LowValuesToInputFieldBoxTest -->
+    </classes>
+  </test> <!-- TestOne(failed) -->
+</suite> <!-- Failed suite [CarEMIProjectSuite] -->
